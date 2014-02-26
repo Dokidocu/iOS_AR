@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661C844518BB923200064110 /* HLAFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C844418BB923200064110 /* HLAFourthViewController.m */; };
+		661CAA6418BA62CE004A27F4 /* HLAThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661CAA6318BA62CE004A27F4 /* HLAThirdViewController.m */; };
 		66AA067418B5FBC800AC5065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA067318B5FBC800AC5065 /* Foundation.framework */; };
 		66AA067618B5FBC800AC5065 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA067518B5FBC800AC5065 /* CoreGraphics.framework */; };
 		66AA067818B5FBC800AC5065 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA067718B5FBC800AC5065 /* UIKit.framework */; };
@@ -23,6 +25,9 @@
 		66AA069B18B5FBC900AC5065 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA067718B5FBC800AC5065 /* UIKit.framework */; };
 		66AA06A318B5FBC900AC5065 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66AA06A118B5FBC900AC5065 /* InfoPlist.strings */; };
 		66AA06A518B5FBC900AC5065 /* FrameworkARTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA06A418B5FBC900AC5065 /* FrameworkARTestTests.m */; };
+		66AA06AF18B5FE4200AC5065 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA06AE18B5FE4200AC5065 /* CoreLocation.framework */; };
+		66AA06B118B6525400AC5065 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AA06B018B6525400AC5065 /* MapKit.framework */; };
+		66AA06B518B658EC00AC5065 /* HLAMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AA06B418B658EC00AC5065 /* HLAMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661C844318BB923200064110 /* HLAFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAFourthViewController.h; sourceTree = "<group>"; };
+		661C844418BB923200064110 /* HLAFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAFourthViewController.m; sourceTree = "<group>"; };
+		661CAA6218BA62CE004A27F4 /* HLAThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAThirdViewController.h; sourceTree = "<group>"; };
+		661CAA6318BA62CE004A27F4 /* HLAThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAThirdViewController.m; sourceTree = "<group>"; };
 		66AA067018B5FBC800AC5065 /* FrameworkARTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkARTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AA067318B5FBC800AC5065 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66AA067518B5FBC800AC5065 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +67,10 @@
 		66AA06A018B5FBC900AC5065 /* FrameworkARTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrameworkARTestTests-Info.plist"; sourceTree = "<group>"; };
 		66AA06A218B5FBC900AC5065 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66AA06A418B5FBC900AC5065 /* FrameworkARTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameworkARTestTests.m; sourceTree = "<group>"; };
+		66AA06AE18B5FE4200AC5065 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		66AA06B018B6525400AC5065 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		66AA06B318B658EC00AC5065 /* HLAMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLAMapAnnotation.h; path = MapAnnotation/HLAMapAnnotation.h; sourceTree = "<group>"; };
+		66AA06B418B658EC00AC5065 /* HLAMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLAMapAnnotation.m; path = MapAnnotation/HLAMapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AA06B118B6525400AC5065 /* MapKit.framework in Frameworks */,
+				66AA06AF18B5FE4200AC5065 /* CoreLocation.framework in Frameworks */,
 				66AA067618B5FBC800AC5065 /* CoreGraphics.framework in Frameworks */,
 				66AA067818B5FBC800AC5065 /* UIKit.framework in Frameworks */,
 				66AA067418B5FBC800AC5065 /* Foundation.framework in Frameworks */,
@@ -106,6 +121,8 @@
 		66AA067218B5FBC800AC5065 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66AA06B018B6525400AC5065 /* MapKit.framework */,
+				66AA06AE18B5FE4200AC5065 /* CoreLocation.framework */,
 				66AA067318B5FBC800AC5065 /* Foundation.framework */,
 				66AA067518B5FBC800AC5065 /* CoreGraphics.framework */,
 				66AA067718B5FBC800AC5065 /* UIKit.framework */,
@@ -117,6 +134,7 @@
 		66AA067918B5FBC800AC5065 /* FrameworkARTest */ = {
 			isa = PBXGroup;
 			children = (
+				66AA06B218B658BD00AC5065 /* MapAnnotation */,
 				66AA068218B5FBC800AC5065 /* HLAAppDelegate.h */,
 				66AA068318B5FBC800AC5065 /* HLAAppDelegate.m */,
 				66AA068518B5FBC800AC5065 /* Main_iPhone.storyboard */,
@@ -125,6 +143,10 @@
 				66AA068C18B5FBC800AC5065 /* HLAFirstViewController.m */,
 				66AA068E18B5FBC800AC5065 /* HLASecondViewController.h */,
 				66AA068F18B5FBC800AC5065 /* HLASecondViewController.m */,
+				661CAA6218BA62CE004A27F4 /* HLAThirdViewController.h */,
+				661CAA6318BA62CE004A27F4 /* HLAThirdViewController.m */,
+				661C844318BB923200064110 /* HLAFourthViewController.h */,
+				661C844418BB923200064110 /* HLAFourthViewController.m */,
 				66AA069118B5FBC800AC5065 /* Images.xcassets */,
 				66AA067A18B5FBC800AC5065 /* Supporting Files */,
 			);
@@ -158,6 +180,15 @@
 				66AA06A118B5FBC900AC5065 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66AA06B218B658BD00AC5065 /* MapAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				66AA06B318B658EC00AC5065 /* HLAMapAnnotation.h */,
+				66AA06B418B658EC00AC5065 /* HLAMapAnnotation.m */,
+			);
+			name = MapAnnotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661CAA6418BA62CE004A27F4 /* HLAThirdViewController.m in Sources */,
 				66AA069018B5FBC800AC5065 /* HLASecondViewController.m in Sources */,
 				66AA068418B5FBC800AC5065 /* HLAAppDelegate.m in Sources */,
+				661C844518BB923200064110 /* HLAFourthViewController.m in Sources */,
 				66AA068018B5FBC800AC5065 /* main.m in Sources */,
+				66AA06B518B658EC00AC5065 /* HLAMapAnnotation.m in Sources */,
 				66AA068D18B5FBC800AC5065 /* HLAFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +437,7 @@
 				GCC_PREFIX_HEADER = "FrameworkARTest/FrameworkARTest-Prefix.pch";
 				INFOPLIST_FILE = "FrameworkARTest/FrameworkARTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -416,6 +451,7 @@
 				GCC_PREFIX_HEADER = "FrameworkARTest/FrameworkARTest-Prefix.pch";
 				INFOPLIST_FILE = "FrameworkARTest/FrameworkARTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -481,6 +517,7 @@
 				66AA06AA18B5FBC900AC5065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66AA06AB18B5FBC900AC5065 /* Build configuration list for PBXNativeTarget "FrameworkARTestTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +526,7 @@
 				66AA06AD18B5FBC900AC5065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

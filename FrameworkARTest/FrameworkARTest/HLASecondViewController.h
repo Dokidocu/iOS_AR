@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "HLAMapAnnotation.h"
 
-@interface HLASecondViewController : UIViewController
+@interface HLASecondViewController : UIViewController<MKMapViewDelegate>
+
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *btnSegControl;
 
 @end

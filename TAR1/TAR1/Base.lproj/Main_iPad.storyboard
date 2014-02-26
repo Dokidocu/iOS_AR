@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P95-Ee-eLh"/>
+                        <viewControllerLayoutGuide type="bottom" id="zTU-Hn-dqy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nte-gr-DcI">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogj-Co-Q6I">
+                                <rect key="frame" x="540" y="945" width="208" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Abk-XL-PNb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rVG-fD-CNj" kind="push" id="sv3-Js-Qoy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nte-gr-DcI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M9k-mC-3kR"/>
+                            <constraint firstAttribute="bottom" secondItem="nte-gr-DcI" secondAttribute="bottom" id="OaX-Ee-aeS"/>
+                            <constraint firstItem="Ogj-Co-Q6I" firstAttribute="top" secondItem="P95-Ee-eLh" secondAttribute="bottom" constant="962" id="RFn-us-byS"/>
+                            <constraint firstAttribute="trailing" secondItem="nte-gr-DcI" secondAttribute="trailing" id="WjB-Rz-D6h"/>
+                            <constraint firstAttribute="bottom" secondItem="Ogj-Co-Q6I" secondAttribute="bottom" constant="20" symbolic="YES" id="XZY-kk-y8h"/>
+                            <constraint firstAttribute="trailing" secondItem="Ogj-Co-Q6I" secondAttribute="trailing" constant="20" symbolic="YES" id="th6-Ix-WeV"/>
+                            <constraint firstItem="nte-gr-DcI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z02-BQ-I12"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="nte-gr-DcI" id="lRJ-fe-8b0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="-191"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gVd-zF-aAF">
+            <objects>
+                <viewController id="rVG-fD-CNj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RDI-1A-cvz"/>
+                        <viewControllerLayoutGuide type="bottom" id="v77-E4-irT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1S-P6-udF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VwU-yR-59w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFS-qP-2l7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="-179"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
