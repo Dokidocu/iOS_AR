@@ -411,7 +411,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="second" id="Z7h-1E-pvt"/>
                     <connections>
-                        <outlet property="mapView" destination="gA5-ia-bS9" id="nh9-z9-hcD"/>
+                        <outlet property="myMapView" destination="gA5-ia-bS9" id="1hH-61-dBh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>

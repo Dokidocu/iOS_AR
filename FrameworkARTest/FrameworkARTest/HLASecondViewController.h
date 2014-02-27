@@ -12,7 +12,7 @@
 
 @interface HLASecondViewController : UIViewController<MKMapViewDelegate>
 
-@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) IBOutlet MKMapView *myMapView;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *btnSegControl;
 
 @end

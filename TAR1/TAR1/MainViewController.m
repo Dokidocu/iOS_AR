@@ -34,9 +34,28 @@ NSString * const kLongitudeKeypath = @"geometry.location.lng";
     [_locationManager setDelegate:self];
     [_locationManager setDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
     [_locationManager startUpdatingLocation];
-    
+    //[_mapView setMapType:MKMapTypeHybrid];
+   
 }
 
+#pragma mark - Flipside View
+
+- (void)flipsideViewControllerDidFinish:(FlipSideViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"showAlternate"]) {
+        [[segue destinationViewController] setDelegate:self];
+        [[segue destinationViewController] setLocations:_locations];
+        [[segue destinationViewController] setUserLocation:[_mapView userLocation]];
+    }
+}
+
+#pragma mark - CLLocationDelegate
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
 	CLLocation *lastLocation = [locations lastObject];
 	
@@ -48,6 +67,10 @@ NSString * const kLongitudeKeypath = @"geometry.location.lng";
 		MKCoordinateSpan span = MKCoordinateSpanMake(0.14, 0.14);
 		MKCoordinateRegion region = MKCoordinateRegionMake([lastLocation coordinate], span);
 		
+        [_mapView setShowsUserLocation:YES];
+        
+        MKUserLocation *me = [[MKUserLocation alloc]init];
+        [_mapView addAnnotation:me];
         
 		[_mapView setRegion:region animated:YES];
         [[PlacesLoader sharedInstance]loadPOIsForLocation:lastLocation radius:5000 successHandler:^(NSDictionary *response){

@@ -25,6 +25,13 @@
 		661885C618BC068300E8AB3F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661885C518BC068300E8AB3F /* MainViewController.m */; };
 		66314A6818BD50C700B2A692 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314A6718BD50C700B2A692 /* Place.m */; };
 		66314A6B18BD525500B2A692 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314A6A18BD525500B2A692 /* PlaceAnnotation.m */; };
+		66314AC418BE1C6900B2A692 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314AB918BE1C6900B2A692 /* ARCoordinate.m */; };
+		66314AC518BE1C6900B2A692 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314ABB18BE1C6900B2A692 /* ARGeoCoordinate.m */; };
+		66314AC618BE1C6900B2A692 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314ABD18BE1C6900B2A692 /* ARKit.m */; };
+		66314AC718BE1C6900B2A692 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314AC118BE1C6900B2A692 /* AugmentedRealityController.m */; };
+		66314AC818BE1C6900B2A692 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314AC318BE1C6900B2A692 /* GEOLocations.m */; };
+		66314ACB18BE1CEB00B2A692 /* FlipSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314ACA18BE1CEB00B2A692 /* FlipSideViewController.m */; };
+		66314ACE18BE61CF00B2A692 /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66314ACD18BE61CF00B2A692 /* MarkerView.m */; };
 		663B550618BCA87500F62BE3 /* PlacesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 663B550518BCA87500F62BE3 /* PlacesLoader.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +71,22 @@
 		66314A6718BD50C700B2A692 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		66314A6918BD525500B2A692 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAnnotation.h; sourceTree = "<group>"; };
 		66314A6A18BD525500B2A692 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAnnotation.m; sourceTree = "<group>"; };
+		66314AB818BE1C6900B2A692 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		66314AB918BE1C6900B2A692 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		66314ABA18BE1C6900B2A692 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		66314ABB18BE1C6900B2A692 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		66314ABC18BE1C6900B2A692 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		66314ABD18BE1C6900B2A692 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		66314ABE18BE1C6900B2A692 /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		66314ABF18BE1C6900B2A692 /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewProtocol.h; sourceTree = "<group>"; };
+		66314AC018BE1C6900B2A692 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		66314AC118BE1C6900B2A692 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		66314AC218BE1C6900B2A692 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
+		66314AC318BE1C6900B2A692 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		66314AC918BE1CEB00B2A692 /* FlipSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipSideViewController.h; sourceTree = "<group>"; };
+		66314ACA18BE1CEB00B2A692 /* FlipSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipSideViewController.m; sourceTree = "<group>"; };
+		66314ACC18BE61CF00B2A692 /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerView.h; sourceTree = "<group>"; };
+		66314ACD18BE61CF00B2A692 /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerView.m; sourceTree = "<group>"; };
 		663B550418BCA87500F62BE3 /* PlacesLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesLoader.h; sourceTree = "<group>"; };
 		663B550518BCA87500F62BE3 /* PlacesLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +123,7 @@
 				661885B218BC020500E8AB3F /* TAR1Tests */,
 				6618858918BC020500E8AB3F /* Frameworks */,
 				6618858818BC020500E8AB3F /* Products */,
+				66314AB718BE1C6900B2A692 /* ARKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +165,10 @@
 				66314A6718BD50C700B2A692 /* Place.m */,
 				66314A6918BD525500B2A692 /* PlaceAnnotation.h */,
 				66314A6A18BD525500B2A692 /* PlaceAnnotation.m */,
+				66314AC918BE1CEB00B2A692 /* FlipSideViewController.h */,
+				66314ACA18BE1CEB00B2A692 /* FlipSideViewController.m */,
+				66314ACC18BE61CF00B2A692 /* MarkerView.h */,
+				66314ACD18BE61CF00B2A692 /* MarkerView.m */,
 			);
 			path = TAR1;
 			sourceTree = "<group>";
@@ -172,6 +200,25 @@
 				661885B518BC020500E8AB3F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66314AB718BE1C6900B2A692 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				66314AB818BE1C6900B2A692 /* ARCoordinate.h */,
+				66314AB918BE1C6900B2A692 /* ARCoordinate.m */,
+				66314ABA18BE1C6900B2A692 /* ARGeoCoordinate.h */,
+				66314ABB18BE1C6900B2A692 /* ARGeoCoordinate.m */,
+				66314ABC18BE1C6900B2A692 /* ARKit.h */,
+				66314ABD18BE1C6900B2A692 /* ARKit.m */,
+				66314ABE18BE1C6900B2A692 /* ARLocationDelegate.h */,
+				66314ABF18BE1C6900B2A692 /* ARViewProtocol.h */,
+				66314AC018BE1C6900B2A692 /* AugmentedRealityController.h */,
+				66314AC118BE1C6900B2A692 /* AugmentedRealityController.m */,
+				66314AC218BE1C6900B2A692 /* GEOLocations.h */,
+				66314AC318BE1C6900B2A692 /* GEOLocations.m */,
+			);
+			path = ARKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66314AC618BE1C6900B2A692 /* ARKit.m in Sources */,
+				66314AC718BE1C6900B2A692 /* AugmentedRealityController.m in Sources */,
 				66314A6818BD50C700B2A692 /* Place.m in Sources */,
 				663B550618BCA87500F62BE3 /* PlacesLoader.m in Sources */,
+				66314AC518BE1C6900B2A692 /* ARGeoCoordinate.m in Sources */,
 				66314A6B18BD525500B2A692 /* PlaceAnnotation.m in Sources */,
+				66314ACB18BE1CEB00B2A692 /* FlipSideViewController.m in Sources */,
 				6618859B18BC020500E8AB3F /* AppDelegate.m in Sources */,
+				66314ACE18BE61CF00B2A692 /* MarkerView.m in Sources */,
 				661885C618BC068300E8AB3F /* MainViewController.m in Sources */,
+				66314AC418BE1C6900B2A692 /* ARCoordinate.m in Sources */,
 				6618859718BC020500E8AB3F /* main.m in Sources */,
+				66314AC818BE1C6900B2A692 /* GEOLocations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

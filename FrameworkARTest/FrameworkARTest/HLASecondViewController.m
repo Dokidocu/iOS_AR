@@ -13,11 +13,11 @@
 @end
 
 @implementation HLASecondViewController
-@synthesize mapView, btnSegControl;
+@synthesize myMapView, btnSegControl;
 
 - (void)viewDidLoad
 {
-    [mapView setDelegate:self];
+    [myMapView setDelegate:self];
     //[[self view]addSubview:mapView];
     
     [NSThread detachNewThreadSelector:@selector(displayMap) toTarget:self withObject:nil];
@@ -46,18 +46,36 @@
     HLAMapAnnotation *addAnnotation = [[HLAMapAnnotation alloc] initWithCoordinate:coords];
     [addAnnotation setTitletext:@"My Annotation Title"];
     [addAnnotation setSubtitletext:@"this is my subtitle property"];
-    [mapView addAnnotation:addAnnotation];
+    [myMapView addAnnotation:addAnnotation];
     
+    //Map attributs
+    [myMapView setZoomEnabled:YES];
+    [myMapView setShowsBuildings:YES];
+    [myMapView setShowsPointsOfInterest:YES];
     
-    [mapView setRegion:region animated:YES];
+    //Map 3D
+    MKMapCamera *mapCamera = [[MKMapCamera alloc]init];
+    [mapCamera setCenterCoordinate:coords];
+    mapCamera.pitch = 45;
+    mapCamera.altitude = 5;
+    mapCamera.heading = 90; //NORTH
+   
+    
+    [myMapView setCamera:mapCamera animated:YES];
+    
+    //[mapView setRegion:region animated:YES];
     
 }
 
 -(void)setupSegmentedControl{
     btnSegControl = [[UISegmentedControl alloc] initWithItems:[NSArray
               arrayWithObjects:@"Standard", @"Satellite", @"Hybrid", nil]];
-    [btnSegControl setFrame:CGRectMake(30, 50, 280-30, 30)];
+    
+    CGFloat screenWidth = [[UIScreen mainScreen]bounds].size.width;
+    
+    [btnSegControl setFrame:CGRectMake((screenWidth/2)-125, 50, 280-30, 30)];
     btnSegControl.selectedSegmentIndex = 0.0; // start by showing the normal picker
+    
     [btnSegControl addTarget:self action:@selector(toggleToolBarChange:) forControlEvents:UIControlEventValueChanged];
     
     //Set style
@@ -76,7 +94,7 @@
     UISegmentedControl *segCtrnl = sender;
     switch ([segCtrnl selectedSegmentIndex]) {
         case 0: //Map
-            [mapView setMapType:MKMapTypeStandard];
+            [myMapView setMapType:MKMapTypeStandard];
             break;
         case 1: { //Satellite
             
@@ -84,14 +102,22 @@
             [self reverseGecode:myLocation];
             
             
-            [mapView setMapType:MKMapTypeSatellite];
+            [myMapView setMapType:MKMapTypeSatellite];
+            
             break;
         }
         case 2: //Hybrid
-            [mapView setMapType:MKMapTypeHybrid];
+            [myMapView setMapType:MKMapTypeHybrid];
             break;
     }
 }
+
+-(void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated{
+    
+    
+    
+}
+
 
 -(void)reverseGecode:(CLLocation *)location{
     CLGeocoder *geoCoder = [[CLGeocoder alloc] init];

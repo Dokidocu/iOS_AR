@@ -27,4 +27,8 @@
 	return [NSString stringWithFormat:@"%@ Name:%@, location:%@", [super description], _placeName, _location];
 }
 
+- (NSString *)infoText {
+	return [NSString stringWithFormat:@"Name:%@\nAddress:%@\nPhone:%@\nWeb:%@", _placeName, _address, _phoneNumber, _website];
+}
+
 @end

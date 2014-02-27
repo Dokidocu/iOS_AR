@@ -11,9 +11,9 @@
 #import <MapKit/MapKit.h>
 #import "PlacesLoader.h"
 
+#import "FlipSideViewController.h"
 
-
-@interface MainViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate>{
+@interface MainViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate, FlipSideViewControllerDelegate>{
     
 }
 
